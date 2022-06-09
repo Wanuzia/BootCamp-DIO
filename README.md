@@ -13,9 +13,9 @@
     Observações: Optei por registrar as anotações dentro de um projeto React.
 
 ### Link Surge 
-<a href="" target="_blank"> Em processo de realização.</a>
+<a href="https://bootcamp-resumo-wanuzia.surge.sh/" target="_blank">Resumo do Bootcamp by Wanuzia</a>
 
-### Imagens
+
 
 Em processo de construção.
 </div>
