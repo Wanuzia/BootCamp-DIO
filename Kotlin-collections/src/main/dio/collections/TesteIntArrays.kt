@@ -20,7 +20,7 @@ fun main() {
         println(values[index])
     }
     println("-------------")
-    values.sort() 
+    values.sort()
     for(valor in values) {
         println(valor)
     }
