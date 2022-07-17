@@ -8,9 +8,14 @@ fun main() {
     val funcionarios = listOf(maria, dandara, alice)
 
     funcionarios.forEach{ println(it) }
-    
+
     println("---------------")
     println(funcionarios.find { it.nome == "Maria" })
+
+    println("---------------a seguir, exemplo de encadeamento:")
+    funcionarios
+        .sortedBy { it.salario }
+        .forEach { println(it) }
 }
 data class Funcionario(
     val nome: String,
