@@ -1,9 +1,9 @@
 package dio.collections
 
 fun main() {
-    val maria = Funcionario(nome = "Maria", salario = 2800.0)
-    val dandara = Funcionario(nome = "Dandara", salario = 5000.0)
-    val alice = Funcionario(nome = "Alice", salario = 1500.0)
+    val maria = Funcionario(nome = "Maria", salario = 2800.0, tipoContrato = "CLT")
+    val dandara = Funcionario(nome = "Dandara", salario = 5000.0, tipoContrato = "PJ")
+    val alice = Funcionario(nome = "Alice", salario = 1500.0, tipoContrato = "CLT")
 
     val funcionarios = listOf(maria, dandara, alice)
 
@@ -16,10 +16,17 @@ fun main() {
     funcionarios
         .sortedBy { it.salario }
         .forEach { println(it) }
+
+    println("---------------")
+    funcionarios
+        .groupBy { it.tipoContrato }
+        .forEach { println(it) }
+
 }
 data class Funcionario(
     val nome: String,
-    val salario: Double
+    val salario: Double,
+    val tipoContrato: String
 ){
     override fun toString(): String =
         """
